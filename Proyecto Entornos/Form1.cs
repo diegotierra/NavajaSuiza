@@ -28,5 +28,11 @@ namespace Proyecto_Entornos
             Multiplos3.formapp2 oApp2 = new Multiplos3.formapp2();
             oApp2.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            matrizrotar.formapp3 oApp3 = new matrizrotar.formapp3();
+            oApp3.ShowDialog();
+        }
     }
 }
