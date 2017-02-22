@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Entornos
 {
-    public partial class Form1 : Form
+    public partial class Formprin : Form
     {
-        public Form1()
+        public Formprin()
         {
             InitializeComponent();
         }

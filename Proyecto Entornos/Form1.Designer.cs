@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Entornos
 {
-    partial class Form1
+    partial class Formprin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
