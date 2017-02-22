@@ -19,7 +19,8 @@ namespace Proyecto_Entornos
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Factorial.formapp1 oApp1 = new Factorial.formapp1();
+            oApp1.ShowDialog();
         }
     }
 }
