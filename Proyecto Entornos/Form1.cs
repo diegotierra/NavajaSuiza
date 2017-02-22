@@ -34,5 +34,11 @@ namespace Proyecto_Entornos
             matrizrotar.formapp3 oApp3 = new matrizrotar.formapp3();
             oApp3.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            zigzag.formapp4 oApp4 = new zigzag.formapp4();
+            oApp4.ShowDialog();
+        }
     }
 }
