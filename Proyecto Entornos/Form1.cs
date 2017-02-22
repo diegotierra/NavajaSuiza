@@ -22,5 +22,11 @@ namespace Proyecto_Entornos
             Factorial.formapp1 oApp1 = new Factorial.formapp1();
             oApp1.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Multiplos3.formapp2 oApp2 = new Multiplos3.formapp2();
+            oApp2.ShowDialog();
+        }
     }
 }
