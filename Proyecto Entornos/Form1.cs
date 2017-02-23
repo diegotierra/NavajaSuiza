@@ -17,24 +17,44 @@ namespace Proyecto_Entornos
             InitializeComponent();
         }
 
+        /// <summary>
+        /// En este evento al hacer click llama a la aplicacion 1
+        /// </summary>
+        /// <param name="sender">Lanza el evento del boton 1</param>
+        /// <param name="e">Sin uso</param>
         private void button1_Click(object sender, EventArgs e)
         {
             Factorial.formapp1 oApp1 = new Factorial.formapp1();
             oApp1.ShowDialog();
         }
 
+        /// <summary>
+        /// En este evento al hacer click llama a la aplicacion 2
+        /// </summary>
+        /// <param name="sender">Lanza el evento del boton 2</param>
+        /// <param name="e">Sin uso</param>
         private void button2_Click(object sender, EventArgs e)
         {
             Multiplos3.formapp2 oApp2 = new Multiplos3.formapp2();
             oApp2.ShowDialog();
         }
 
+        /// <summary>
+        /// En este evento al hacer click llama a la aplicacion 3
+        /// </summary>
+        /// <param name="sender">Lanza el evento del boton 3</param>
+        /// <param name="e">Sin uso</param>
         private void button3_Click(object sender, EventArgs e)
         {
             matrizrotar.formapp3 oApp3 = new matrizrotar.formapp3();
             oApp3.ShowDialog();
         }
 
+        /// <summary>
+        /// En este evento al hacer click llama a la aplicacion 4
+        /// </summary>
+        /// <param name="sender">Lanza el evento del boton 4</param>
+        /// <param name="e">Sin uso</param>
         private void button4_Click(object sender, EventArgs e)
         {
             zigzag.formapp4 oApp4 = new zigzag.formapp4();
