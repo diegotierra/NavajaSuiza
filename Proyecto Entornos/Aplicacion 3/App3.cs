@@ -8,21 +8,40 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Namespace de la Aplicacion 3
+/// </summary>
 namespace Proyecto_Entornos.matrizrotar
 {
     public partial class formapp3 : Form
     {
+        /// <summary>
+        /// Lee uno o varios caracteres y lo devuelve
+        /// </summary>
+        /// <param name="texto">Los caracteres que introducas</param>
+        /// <returns>Devuelve la cadena de caracteres que hayas introducido</returns>
         private static string InputBox(string texto) { InputBoxDialog ib = new InputBoxDialog(); ib.FormPrompt = texto; ib.DefaultValue = ""; ib.ShowDialog(); string s = ib.InputResponse; ib.Close(); return s; }
 
 
+        /// <summary>
+        /// Constructor de la clase formapp3
+        /// </summary>
         public formapp3()
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// He creado  2 constantes que definen las filas y columnas y una matriz
+        /// </summary>
         const int kfila = 3;
         const int kcol = 4;
         int[,] matriz = new int[kfila, kcol];
 
+        /// <summary>
+        /// Lee e introduce datos en una matriz
+        /// </summary>
+        /// <param name="matriz">Matriz que le pasamos</param>
         void leer(int [,] matriz)
         {
             for (int f = 0; f < matriz.GetLength(0); f++)
@@ -34,6 +53,10 @@ namespace Proyecto_Entornos.matrizrotar
             }
         }
 
+        /// <summary>
+        /// Funcion que rota las posiciones en una matriz
+        /// </summary>
+        /// <param name="matriz">Matriz que le pasamos</param>
         void rotar(int [,] matriz)
         {
             int aux;
@@ -48,7 +71,11 @@ namespace Proyecto_Entornos.matrizrotar
             }
         }
 
-
+        /// <summary>
+        /// Muestra los datos de la matriz
+        /// </summary>
+        /// <param name="matriz">Matriz que le pasamos</param>
+        /// <returns>Devuelve un texto con el contenido de la matriz</returns>
         string mostrarMatriz(int[,] matriz)
         {
             int f, c; string texto;
@@ -66,11 +93,22 @@ namespace Proyecto_Entornos.matrizrotar
 
             return texto;
         }
+
+        /// <summary>
+        /// Evento que lee la matriz
+        /// </summary>
+        /// <param name="sender">Lanza el evento del boton 1</param>
+        /// <param name="e">Sin uso</param>
         private void button1_Click(object sender, EventArgs e)
         {
             leer(matriz);
         }
 
+        /// <summary>
+        /// Evento que rota la matriz y muestra el resultado
+        /// </summary>
+        /// <param name="sender">Lanza el evento del boton 2</param>
+        /// <param name="e">Sin uso</param>
         private void button2_Click(object sender, EventArgs e)
         {
             string texto;

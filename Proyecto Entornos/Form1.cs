@@ -8,10 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Namespace de la aplicacion principal
+/// </summary>
 namespace Proyecto_Entornos
 {
     public partial class Formprin : Form
     {
+        /// <summary>
+        /// Constructor de la clase Formprin
+        /// </summary>
         public Formprin()
         {
             InitializeComponent();

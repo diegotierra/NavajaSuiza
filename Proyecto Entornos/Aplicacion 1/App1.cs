@@ -8,11 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// Namespace de la Aplicacion 1
+/// </summary>
 namespace Proyecto_Entornos.Factorial 
 {
     public partial class formapp1 : Form
     {
-
+        /// <summary>
+        /// Constructor de la clase formapp1
+        /// </summary>
         public formapp1()
         {
             InitializeComponent();
