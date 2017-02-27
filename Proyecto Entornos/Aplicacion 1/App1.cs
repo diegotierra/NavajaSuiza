@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Factorial
+namespace Proyecto_Entornos.Factorial 
 {
     public partial class formapp1 : Form
     {

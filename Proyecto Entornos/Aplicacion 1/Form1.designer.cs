@@ -1,4 +1,4 @@
-﻿namespace Factorial
+﻿namespace Proyecto_Entornos.Factorial
 {
     partial class formapp1
     {

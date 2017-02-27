@@ -1,4 +1,4 @@
-﻿namespace Multiplos3
+﻿namespace Proyecto_Entornos.Multiplos3
 {
     partial class formapp2
     {

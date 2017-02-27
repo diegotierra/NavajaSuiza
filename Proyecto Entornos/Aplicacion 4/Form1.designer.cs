@@ -1,4 +1,4 @@
-﻿namespace zigzag
+﻿namespace Proyecto_Entornos.zigzag
 {
     partial class formapp4
     {

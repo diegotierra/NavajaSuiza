@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace matrizrotar
+namespace Proyecto_Entornos.matrizrotar
 {
     public partial class formapp3 : Form
     {

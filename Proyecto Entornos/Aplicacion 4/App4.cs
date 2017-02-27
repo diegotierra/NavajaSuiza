@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace zigzag
+namespace Proyecto_Entornos.zigzag
 {
     public partial class formapp4 : Form
     {

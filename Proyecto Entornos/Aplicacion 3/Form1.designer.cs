@@ -1,4 +1,4 @@
-﻿namespace matrizrotar
+﻿namespace Proyecto_Entornos.matrizrotar
 {
     partial class formapp3
     {
