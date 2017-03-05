@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Entornos.Factorial
 {
-    partial class formapp1
+    partial class FormApp1
     {
         /// <summary>
         /// Variable del diseñador necesaria.

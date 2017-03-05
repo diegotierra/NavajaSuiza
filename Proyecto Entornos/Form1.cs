@@ -30,7 +30,8 @@ namespace Proyecto_Entornos
         /// <param name="e">Sin uso</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            Proyecto_Entornos.Factorial.formapp1 oApp1 = new Proyecto_Entornos.Factorial.formapp1();
+            Proyecto_Entornos.Factorial.FormApp1 oApp1 = new Proyecto_Entornos.Factorial.FormApp1();
+
             oApp1.ShowDialog();
         }
 
@@ -41,7 +42,7 @@ namespace Proyecto_Entornos
         /// <param name="e">Sin uso</param>
         private void button2_Click(object sender, EventArgs e)
         {
-            Proyecto_Entornos.Multiplos3.formapp2 oApp2 = new Proyecto_Entornos.Multiplos3.formapp2();
+            Proyecto_Entornos.Multiplos3.FormApp2 oApp2 = new Proyecto_Entornos.Multiplos3.FormApp2();
             oApp2.ShowDialog();
         }
 
@@ -52,7 +53,7 @@ namespace Proyecto_Entornos
         /// <param name="e">Sin uso</param>
         private void button3_Click(object sender, EventArgs e)
         {
-            Proyecto_Entornos.matrizrotar.formapp3 oApp3 = new Proyecto_Entornos.matrizrotar.formapp3();
+            Proyecto_Entornos.MatrizRotar.FormApp3 oApp3 = new Proyecto_Entornos.MatrizRotar.FormApp3();
             oApp3.ShowDialog();
         }
 
@@ -63,7 +64,7 @@ namespace Proyecto_Entornos
         /// <param name="e">Sin uso</param>
         private void button4_Click(object sender, EventArgs e)
         {
-            Proyecto_Entornos.zigzag.formapp4 oApp4 = new Proyecto_Entornos.zigzag.formapp4();
+            Proyecto_Entornos.ZigZag.FormApp4 oApp4 = new Proyecto_Entornos.ZigZag.FormApp4();
             oApp4.ShowDialog();
         }
     }

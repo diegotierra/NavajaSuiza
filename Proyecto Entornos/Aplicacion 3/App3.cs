@@ -11,24 +11,37 @@ using System.Windows.Forms;
 /// <summary>
 /// Namespace de la Aplicacion 3
 /// </summary>
-namespace Proyecto_Entornos.matrizrotar
+namespace Proyecto_Entornos.MatrizRotar
 {
-    public partial class formapp3 : Form
+    public partial class FormApp3 : Form
     {
         /// <summary>
         /// Lee uno o varios caracteres y lo devuelve
         /// </summary>
-        /// <param name="texto">Los caracteres que introducas</param>
+        /// <param name="Texto">Los caracteres que introduzcas</param>
         /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve la cadena de caracteres que hayas introducido</returns>
-        private static string InputBox(string texto) { InputBoxDialog ib = new InputBoxDialog(); ib.FormPrompt = texto; ib.DefaultValue = ""; ib.ShowDialog(); string s = ib.InputResponse; ib.Close(); return s; }
+        private static string InputBox(string Texto)
+        {
+            InputBoxDialog ib = new InputBoxDialog();
+
+            ib.FormPrompt = Texto;
+            string s = ib.InputResponse;
+
+            ib.DefaultValue = "";
+
+            ib.ShowDialog();          
+            ib.Close();
+
+            return s;
+        }
 
 
         /// <summary>
         /// Constructor de la clase formapp3 que inicializa los componentes
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
-        public formapp3()
+        public FormApp3()
         {
             InitializeComponent();
         }
@@ -36,36 +49,45 @@ namespace Proyecto_Entornos.matrizrotar
         /// <summary>
         /// He creado  2 constantes que definen las filas y columnas y una matriz
         /// </summary>
-        const int kfila = 3;
-        const int kcol = 4;
-        int[,] matriz = new int[kfila, kcol];
+        const int NumeroFilas = 3;
+        const int NumeroColumnas = 4;
+
+        int[,] Matriz = new int[NumeroFilas, NumeroColumnas];
 
         /// <summary>
         /// Lee e introduce datos en una matriz
         /// </summary>
         /// <remarks>Si se introduce un caracter especial o un espacio en blanco salta un mensaje de error</remarks>
-        /// <param name="matriz">Matriz que le pasamos</param>
-        void LeerMatriz(int [,] matriz)
+        /// <param name="Matriz">Matriz que le pasamos</param>
+        void LeerMatriz(int [,] Matriz)
         {
-            bool valido;
-            int valor;
-            for (int f = 0; f < matriz.GetLength(0); f++)
+            bool NumeroValido;
+            int Valor;
+
+            for (int Filas = 0; Filas < Matriz.GetLength(0); Filas++)
             {
-                for (int c = 0; c < matriz.GetLength(1); c++)
+                for (int Columnas = 0; Columnas < Matriz.GetLength(1); Columnas++)
                 {
                     do
                     {
-                        valido = int.TryParse(InputBox("Introduczca la posicion: " + f + "," + c + "]"), out valor);
-                        if (valido)
+
+                        NumeroValido = int.TryParse(InputBox("Introduzca la posicion: " + Filas + "," + 
+                            Columnas + "]"), out Valor);
+
+                        if (NumeroValido)
                         {
-                            matriz[f, c] = valor;
+
+                            Matriz[Filas, Columnas] = Valor;
+                     
                         }
                         else
                         {
+
                             MessageBox.Show("Valor Erroneo!!");
+
                         }
-                 } while (valido == false);
-                    
+
+                    } while (NumeroValido == false);                    
                 }
             }
         }
@@ -74,45 +96,54 @@ namespace Proyecto_Entornos.matrizrotar
         /// Funcion que rota las posiciones en una matriz
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
-        /// <param name="matriz">Matriz que le pasamos</param>
-        void RotarPosiciones(int [,] matriz)
+        /// <param name="Matriz">Matriz que le pasamos</param>
+        void RotarPosiciones(int [,] Matriz)
         {
-            int aux;
+            int Auxiliar;
        
-            for (int f = 0; f < matriz.GetLength(0); f++)
+            for (int Filas = 0; Filas < Matriz.GetLength(0); Filas++)
             {
-                aux = matriz[f, matriz.GetLength(1)- 1];
-                for (int c = matriz.GetLength(1) - 1; c > 0; c--)
+
+                Auxiliar = Matriz[Filas, Matriz.GetLength(1)- 1];
+
+                for (int Columnas = Matriz.GetLength(1) - 1; Columnas > 0; Columnas--)
                 {
-                    matriz[f, c] = matriz[f, c -1];
+
+                    Matriz[Filas, Columnas] = Matriz[Filas, Columnas -1];
+
                 }
-                matriz[f, 0] = aux;
+
+                Matriz[Filas, 0] = Auxiliar;
             }
         }
 
         /// <summary>
         /// Muestra los datos de la matriz
         /// </summary>
-        /// <param name="matriz">Matriz que le pasamos</param>
+        /// <param name="Matriz">Matriz que le pasamos</param>
         /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve un texto con el contenido de la matriz</returns>
-        string MostrarMatriz(int[,] matriz)
+        string MostrarMatriz(int[,] Matriz)
         {
-            int f, c;
-            string texto;
+            int Filas, Columnas;
+            string Resultado;
 
-            texto = "Los valores de la matriz son:\n";
+            Resultado = "Los valores de la matriz son:\n";
         
-            for (f = 0; f < matriz.GetLength(0); f++)
+            for (Filas = 0; Filas < Matriz.GetLength(0); Filas++)
             {
-                for (c = 0; c < matriz.GetLength(1); c++)
+                for (Columnas = 0; Columnas < Matriz.GetLength(1); Columnas++)
                 {
-                    texto = texto + matriz[f, c] + ", ";
+
+                    Resultado = Resultado + Matriz[Filas, Columnas] + ", ";
+
                 }
-                texto = texto + "\n";
+
+                Resultado = Resultado + "\n";
+
             } 
 
-            return texto;
+            return Resultado;
         }
 
         /// <summary>
@@ -122,7 +153,7 @@ namespace Proyecto_Entornos.matrizrotar
         /// <param name="e">Sin uso</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            LeerMatriz(matriz);
+            LeerMatriz(Matriz);
         }
 
         /// <summary>
@@ -132,10 +163,12 @@ namespace Proyecto_Entornos.matrizrotar
         /// <param name="e">Sin uso</param>
         private void button2_Click(object sender, EventArgs e)
         {
-            string texto;
-            RotarPosiciones(matriz);
-            texto = MostrarMatriz(matriz);
-            MessageBox.Show(texto);
+            string Resultado;
+
+            RotarPosiciones(Matriz);
+            Resultado = MostrarMatriz(Matriz);
+
+            MessageBox.Show(Resultado);
         }
     }
 }

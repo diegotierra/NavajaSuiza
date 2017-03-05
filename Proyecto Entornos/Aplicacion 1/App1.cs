@@ -13,13 +13,13 @@ using System.Windows.Forms;
 /// </summary>
 namespace Proyecto_Entornos.Factorial 
 {
-    public partial class formapp1 : Form
+    public partial class FormApp1 : Form
     {
         /// <summary> 
         /// Constructor de la clase formapp1 que inicializa los componentes
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
-        public formapp1()
+        public FormApp1()
         {
             InitializeComponent();
         }
@@ -28,18 +28,19 @@ namespace Proyecto_Entornos.Factorial
         /// En esta funcion calcula el factorial de un numero que le pasamos por parametros
         /// </summary>
         /// <remarks>Si el numero es menor que 0 lanzara una excepcion</remarks>
-        /// <param name="num">Es el valor que el usuario introduce</param>
+        /// <param name="Numero">Es el valor que el usuario introduce</param>
         /// <returns>Devuelve el factorial</returns>
-        int CalcularFactorial(int num)
+        int CalcularFactorial(int Numero)
         {
-            int factorial = 1;
-            while (num > 0)
+            int Resultado = 1;
+
+            while (Numero > 0)
             {
-                factorial = factorial * num;
-                num--;
+                Resultado = Resultado * Numero;
+                Numero--;
             }
 
-            return factorial;
+            return Resultado;
         }
 
         /// <summary>
@@ -49,15 +50,13 @@ namespace Proyecto_Entornos.Factorial
         /// <param name="e">Sin uso</param>
         private void BBoton1_Click(object sender, EventArgs e)
         {
-            int num,res;
+            int Numero,Resultado;
 
-            num = int.Parse(textBox1.Text);
-            res = CalcularFactorial(num);
+            Numero = int.Parse(textBox1.Text);
+            Resultado = CalcularFactorial(Numero);
 
-            MessageBox.Show(res.ToString());
-
-            
-           
+            MessageBox.Show(Resultado.ToString());
+         
         }
 
 

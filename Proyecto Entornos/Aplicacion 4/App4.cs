@@ -11,86 +11,89 @@ using System.Windows.Forms;
 /// <summary>
 /// Namespace de la aplicacion 4
 /// </summary>
-namespace Proyecto_Entornos.zigzag
+namespace Proyecto_Entornos.ZigZag
 {
-    public partial class formapp4 : Form
+    public partial class FormApp4 : Form
     {
-        /// <summary>
-        /// Lee uno o varios caracteres y lo devuelve
-        /// </summary>
-        /// <param name="texto">Los caracteres que introducas</param>
-        /// <remarks>Nada que comentar</remarks>
-        /// <returns>Devuelve la cadena de caracteres que hayas introducido</returns>
-        private static string InputBox(string texto) { InputBoxDialog ib = new InputBoxDialog(); ib.FormPrompt = texto; ib.DefaultValue = ""; ib.ShowDialog(); string s = ib.InputResponse; ib.Close(); return s; }
 
         /// <summary>
         /// Constructor de la clase formapp4 que inicializa los componentes
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
-        public formapp4()
+        public FormApp4()
         {
             InitializeComponent();
         }
+
+
         /// <summary>
         /// He creado  2 constantes que definen las filas y columnas y una matriz
         /// </summary>
-        const int kfila = 4;
-        const int kcol = 5;
-        int[,] zigzag = new int[kfila, kcol];
+        const int NumeroFilas = 4;
+        const int NumeroColumnas = 5;
+
+        int[,] ZigZag = new int[NumeroFilas, NumeroColumnas];
 
         /// <summary>
         /// Rellena la matriz en forma de zigzag con datos internos 
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
-        /// <param name="zigzag">Matriz que le pasamos</param>
-        void RellenarMatriz (int [,] zigzag)
+        /// <param name="ZigZag">Matriz que le pasamos</param>
+        void RellenarMatriz (int [,] ZigZag)
         {
-            int num = 1;
-            for (int j = 0; j < zigzag.GetLength(1); j++)
+            int Numero = 1;
+
+            for (int Columnas = 0; Columnas < ZigZag.GetLength(1); Columnas++)
             {
-                if (j % 2 == 0)
+                if (Columnas % 2 == 0)
                 {
-                    for (int i = 0; i < zigzag.GetLength(0); i++)
+                    for (int Filas = 0; Filas < ZigZag.GetLength(0); Filas++)
                     {
-                        zigzag[i,j] = num;
-                        num++;
+
+                        ZigZag[Filas,Filas] = Numero;
+                        Numero++;
+
                     }
                 }
                 else
                 {
-                    for (int i = zigzag.GetLength(0) - 1; i >= 0; i--)
+                    for (int Filas = ZigZag.GetLength(0) - 1; Filas >= 0; Filas--)
                     {
-                        zigzag[i,j] = num;
-                        num++;
-                    }
 
-                }
-                
+                        ZigZag[Filas,Filas] = Numero;
+                        Numero++;
+
+                    }
+                }               
             }
         }
 
         /// <summary>
         /// Muestra los datos de la matriz
         /// </summary>
-        /// <param name="zigzag">Matriz que le pasamos</param>
+        /// <param name="ZigZag">Matriz que le pasamos</param>
         /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve un texto con el contenido de la matriz</returns>
-        string MostrarMatriz(int[,] zigzag)
+        string MostrarMatriz(int[,] ZigZag)
         {
-            int i, j; string texto;
+            int Filas, Columnas; string Resultado;
 
-            texto = "Los valores de la matriz son:\n";
+            Resultado = "Los valores de la matriz son:\n";
 
-            for (i = 0; i < zigzag.GetLength(0); i++)
+            for (Filas = 0; Filas < ZigZag.GetLength(0); Filas++)
             {
-                for (j = 0; j < zigzag.GetLength(1); j++)
+                for (Columnas = 0; Columnas < ZigZag.GetLength(1); Columnas++)
                 {
-                    texto = texto + zigzag[i, j] + ", ";
+
+                    Resultado = Resultado + ZigZag[Filas, Columnas] + ", ";
+
                 }
-                    texto = texto + "\n";
+
+                    Resultado = Resultado + "\n";
+
              } 
 
-            return texto;
+            return Resultado;
         }
 
         /// <summary>
@@ -100,11 +103,12 @@ namespace Proyecto_Entornos.zigzag
         /// <param name="e">Sin uso</param>
         private void button2_Click(object sender, EventArgs e)
         {
-            string texto;
-            RellenarMatriz(zigzag);
-            texto = MostrarMatriz(zigzag);
+            string Resultado;
 
-            MessageBox.Show(texto);
+            RellenarMatriz(ZigZag);
+            Resultado = MostrarMatriz(ZigZag);
+
+            MessageBox.Show(Resultado);
 
         }
     }

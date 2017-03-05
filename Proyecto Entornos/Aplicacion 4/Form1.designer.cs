@@ -1,6 +1,6 @@
-﻿namespace Proyecto_Entornos.zigzag
+﻿namespace Proyecto_Entornos.ZigZag
 {
-    partial class formapp4
+    partial class FormApp4
     {
         /// <summary>
         /// Variable del diseñador necesaria.

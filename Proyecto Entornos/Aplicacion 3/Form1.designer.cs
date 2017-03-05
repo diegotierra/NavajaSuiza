@@ -1,6 +1,6 @@
-﻿namespace Proyecto_Entornos.matrizrotar
+﻿namespace Proyecto_Entornos.MatrizRotar
 {
-    partial class formapp3
+    partial class FormApp3
     {
         /// <summary>
         /// Variable del diseñador necesaria.

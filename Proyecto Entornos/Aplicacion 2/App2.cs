@@ -13,13 +13,13 @@ using System.Windows.Forms;
 /// </summary>
 namespace Proyecto_Entornos.Multiplos3
 {
-    public partial class formapp2 : Form
+    public partial class FormApp2 : Form
     {
         /// <summary>
         /// Constructor de la clase formapp2 que inicializa los componentes
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
-        public formapp2()
+        public FormApp2()
         {
             InitializeComponent();
         }
@@ -31,16 +31,22 @@ namespace Proyecto_Entornos.Multiplos3
         /// <returns>Devuelve un texto con todos los multiplos</returns>
         string CalcularMultiplos()
         {
-            int num;
-            string texto;
+            int Numeros;
+            string Texto;
 
-            texto = "Los múltiplos de 3 son: ";
-            for (num = 1; num <= 100; num++)
+            Texto = "Los múltiplos de 3 son: ";
+
+            for (Numeros = 1; Numeros <= 100; Numeros++)
             {
-                if (num % 3 == 0)
-                    texto = texto + num + ", ";
+
+                if (Numeros % 3 == 0)
+                {
+                    Texto = Texto + Numeros + ", ";
+                }
+
             }
-            return texto;
+
+            return Texto;
         }
 
         /// <summary>
@@ -50,9 +56,9 @@ namespace Proyecto_Entornos.Multiplos3
         /// <param name="e">Sin uso</param>
         private void BBoton1_Click(object sender, EventArgs e)
         {
-            string texto;
-            texto = CalcularMultiplos();
-            MessageBox.Show(texto);
+            string Resultado;
+            Resultado = CalcularMultiplos();
+            MessageBox.Show(Resultado);
                       
 
 

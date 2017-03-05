@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Entornos.Multiplos3
 {
-    partial class formapp2
+    partial class FormApp2
     {
         /// <summary>
         /// Variable del diseñador necesaria.
