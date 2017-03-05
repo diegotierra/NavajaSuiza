@@ -19,12 +19,14 @@ namespace Proyecto_Entornos.zigzag
         /// Lee uno o varios caracteres y lo devuelve
         /// </summary>
         /// <param name="texto">Los caracteres que introducas</param>
+        /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve la cadena de caracteres que hayas introducido</returns>
         private static string InputBox(string texto) { InputBoxDialog ib = new InputBoxDialog(); ib.FormPrompt = texto; ib.DefaultValue = ""; ib.ShowDialog(); string s = ib.InputResponse; ib.Close(); return s; }
 
         /// <summary>
-        /// Constructor de la clase formapp4
+        /// Constructor de la clase formapp4 que inicializa los componentes
         /// </summary>
+        /// <remarks>Nada que comentar</remarks>
         public formapp4()
         {
             InitializeComponent();
@@ -39,8 +41,9 @@ namespace Proyecto_Entornos.zigzag
         /// <summary>
         /// Rellena la matriz en forma de zigzag con datos internos 
         /// </summary>
+        /// <remarks>Nada que comentar</remarks>
         /// <param name="zigzag">Matriz que le pasamos</param>
-        void rellenar (int [,] zigzag)
+        void RellenarMatriz (int [,] zigzag)
         {
             int num = 1;
             for (int j = 0; j < zigzag.GetLength(1); j++)
@@ -70,8 +73,9 @@ namespace Proyecto_Entornos.zigzag
         /// Muestra los datos de la matriz
         /// </summary>
         /// <param name="zigzag">Matriz que le pasamos</param>
+        /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve un texto con el contenido de la matriz</returns>
-        string mostrarMatriz(int[,] zigzag)
+        string MostrarMatriz(int[,] zigzag)
         {
             int i, j; string texto;
 
@@ -97,8 +101,8 @@ namespace Proyecto_Entornos.zigzag
         private void button2_Click(object sender, EventArgs e)
         {
             string texto;
-            rellenar(zigzag);
-            texto = mostrarMatriz(zigzag);
+            RellenarMatriz(zigzag);
+            texto = MostrarMatriz(zigzag);
 
             MessageBox.Show(texto);
 

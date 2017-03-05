@@ -16,7 +16,7 @@ namespace Proyecto_Entornos
     public partial class Formprin : Form
     {
         /// <summary>
-        /// Constructor de la clase Formprin
+        /// Constructor de la clase Formprin que inicializa los componentes
         /// </summary>
         public Formprin()
         {

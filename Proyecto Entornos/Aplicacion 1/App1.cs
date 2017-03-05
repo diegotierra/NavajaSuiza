@@ -15,9 +15,10 @@ namespace Proyecto_Entornos.Factorial
 {
     public partial class formapp1 : Form
     {
-        /// <summary>
-        /// Constructor de la clase formapp1
+        /// <summary> 
+        /// Constructor de la clase formapp1 que inicializa los componentes
         /// </summary>
+        /// <remarks>Nada que comentar</remarks>
         public formapp1()
         {
             InitializeComponent();
@@ -29,7 +30,7 @@ namespace Proyecto_Entornos.Factorial
         /// <remarks>Si el numero es menor que 0 lanzara una excepcion</remarks>
         /// <param name="num">Es el valor que el usuario introduce</param>
         /// <returns>Devuelve el factorial</returns>
-        int factorial(int num)
+        int CalcularFactorial(int num)
         {
             int factorial = 1;
             while (num > 0)
@@ -51,7 +52,7 @@ namespace Proyecto_Entornos.Factorial
             int num,res;
 
             num = int.Parse(textBox1.Text);
-            res = factorial(num);
+            res = CalcularFactorial(num);
 
             MessageBox.Show(res.ToString());
 

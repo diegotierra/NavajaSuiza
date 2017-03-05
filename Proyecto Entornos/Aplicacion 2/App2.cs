@@ -16,8 +16,9 @@ namespace Proyecto_Entornos.Multiplos3
     public partial class formapp2 : Form
     {
         /// <summary>
-        /// Constructor de la clase formapp2
+        /// Constructor de la clase formapp2 que inicializa los componentes
         /// </summary>
+        /// <remarks>Nada que comentar</remarks>
         public formapp2()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace Proyecto_Entornos.Multiplos3
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve un texto con todos los multiplos</returns>
-        string multiplos()
+        string CalcularMultiplos()
         {
             int num;
             string texto;
@@ -50,7 +51,7 @@ namespace Proyecto_Entornos.Multiplos3
         private void BBoton1_Click(object sender, EventArgs e)
         {
             string texto;
-            texto = multiplos();
+            texto = CalcularMultiplos();
             MessageBox.Show(texto);
                       
 
