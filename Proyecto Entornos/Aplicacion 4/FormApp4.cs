@@ -39,7 +39,7 @@ namespace Proyecto_Entornos.ZigZag
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
         /// <param name="ZigZag">Matriz que le pasamos</param>
-        void RellenarMatriz (int [,] ZigZag)
+        public void RellenarMatriz (int [,] ZigZag)
         {
             int Numero = 1;
 
@@ -50,7 +50,7 @@ namespace Proyecto_Entornos.ZigZag
                     for (int Filas = 0; Filas < ZigZag.GetLength(0); Filas++)
                     {
 
-                        ZigZag[Filas,Filas] = Numero;
+                        ZigZag[Filas,Columnas] = Numero;
                         Numero++;
 
                     }
@@ -60,7 +60,7 @@ namespace Proyecto_Entornos.ZigZag
                     for (int Filas = ZigZag.GetLength(0) - 1; Filas >= 0; Filas--)
                     {
 
-                        ZigZag[Filas,Filas] = Numero;
+                        ZigZag[Filas,Columnas] = Numero;
                         Numero++;
 
                     }
@@ -74,7 +74,7 @@ namespace Proyecto_Entornos.ZigZag
         /// <param name="ZigZag">Matriz que le pasamos</param>
         /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve un texto con el contenido de la matriz</returns>
-        string MostrarMatriz(int[,] ZigZag)
+        public string MostrarMatriz(int[,] ZigZag)
         {
             int Filas, Columnas; string Resultado;
 
@@ -101,7 +101,7 @@ namespace Proyecto_Entornos.ZigZag
         /// </summary>
         /// <param name="sender">Lanza el evento del boton 2</param>
         /// <param name="e">Sin uso</param>
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
             string Resultado;
 

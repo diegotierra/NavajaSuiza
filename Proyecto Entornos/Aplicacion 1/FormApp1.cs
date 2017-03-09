@@ -30,14 +30,21 @@ namespace Proyecto_Entornos.Factorial
         /// <remarks>Si el numero es menor que 0 lanzara una excepcion</remarks>
         /// <param name="Numero">Es el valor que el usuario introduce</param>
         /// <returns>Devuelve el factorial</returns>
-        int CalcularFactorial(int Numero)
+        public int CalcularFactorial(int Numero)
         {
             int Resultado = 1;
 
-            while (Numero > 0)
+            if (Numero > 0)
             {
-                Resultado = Resultado * Numero;
-                Numero--;
+                while (Numero > 0)
+                {
+                    Resultado = Resultado * Numero;
+                    Numero--;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error!!");
             }
 
             return Resultado;
@@ -48,11 +55,23 @@ namespace Proyecto_Entornos.Factorial
         /// </summary>
         /// <param name="sender">Lanza el evento del boton 1</param>
         /// <param name="e">Sin uso</param>
-        private void BBoton1_Click(object sender, EventArgs e)
+        public void BBoton1_Click(object sender, EventArgs e)
         {
             int Numero,Resultado;
+            bool NumeroValido = true;
 
-            Numero = int.Parse(textBox1.Text);
+
+            do
+            {
+                NumeroValido = int.TryParse(textBox1.Text, out Numero);
+
+                if (!NumeroValido)
+                {
+                    MessageBox.Show("Valor no valido!!!");                  
+                }
+
+            } while (!NumeroValido);
+            
             Resultado = CalcularFactorial(Numero);
 
             MessageBox.Show(Resultado.ToString());

@@ -13,29 +13,26 @@ using System.Windows.Forms;
 /// </summary>
 namespace Proyecto_Entornos.MatrizRotar
 {
+    
     public partial class FormApp3 : Form
     {
+
         /// <summary>
         /// Lee uno o varios caracteres y lo devuelve
         /// </summary>
         /// <param name="Texto">Los caracteres que introduzcas</param>
         /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve la cadena de caracteres que hayas introducido</returns>
-        private static string InputBox(string Texto)
+        private static string InputBox(string texto)
         {
             InputBoxDialog ib = new InputBoxDialog();
-
-            ib.FormPrompt = Texto;
-            string s = ib.InputResponse;
-
+            ib.FormPrompt = texto;
             ib.DefaultValue = "";
-
-            ib.ShowDialog();          
+            ib.ShowDialog();
+            string s = ib.InputResponse;
             ib.Close();
-
             return s;
         }
-
 
         /// <summary>
         /// Constructor de la clase formapp3 que inicializa los componentes
@@ -59,7 +56,7 @@ namespace Proyecto_Entornos.MatrizRotar
         /// </summary>
         /// <remarks>Si se introduce un caracter especial o un espacio en blanco salta un mensaje de error</remarks>
         /// <param name="Matriz">Matriz que le pasamos</param>
-        void LeerMatriz(int [,] Matriz)
+        public void LeerMatriz(int[,] Matriz)
         {
             bool NumeroValido;
             int Valor;
@@ -71,14 +68,14 @@ namespace Proyecto_Entornos.MatrizRotar
                     do
                     {
 
-                        NumeroValido = int.TryParse(InputBox("Introduzca la posicion: " + Filas + "," + 
+                        NumeroValido = int.TryParse(InputBox("Introduzca la posicion: " + Filas + "," +
                             Columnas + "]"), out Valor);
 
                         if (NumeroValido)
                         {
 
                             Matriz[Filas, Columnas] = Valor;
-                     
+
                         }
                         else
                         {
@@ -87,7 +84,7 @@ namespace Proyecto_Entornos.MatrizRotar
 
                         }
 
-                    } while (NumeroValido == false);                    
+                    } while (NumeroValido == false);
                 }
             }
         }
@@ -97,19 +94,19 @@ namespace Proyecto_Entornos.MatrizRotar
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
         /// <param name="Matriz">Matriz que le pasamos</param>
-        void RotarPosiciones(int [,] Matriz)
+        public void RotarPosiciones(int[,] Matriz)
         {
             int Auxiliar;
-       
+
             for (int Filas = 0; Filas < Matriz.GetLength(0); Filas++)
             {
 
-                Auxiliar = Matriz[Filas, Matriz.GetLength(1)- 1];
+                Auxiliar = Matriz[Filas, Matriz.GetLength(1) - 1];
 
                 for (int Columnas = Matriz.GetLength(1) - 1; Columnas > 0; Columnas--)
                 {
 
-                    Matriz[Filas, Columnas] = Matriz[Filas, Columnas -1];
+                    Matriz[Filas, Columnas] = Matriz[Filas, Columnas - 1];
 
                 }
 
@@ -123,13 +120,13 @@ namespace Proyecto_Entornos.MatrizRotar
         /// <param name="Matriz">Matriz que le pasamos</param>
         /// <remarks>Nada que comentar</remarks>
         /// <returns>Devuelve un texto con el contenido de la matriz</returns>
-        string MostrarMatriz(int[,] Matriz)
+        public string MostrarMatriz(int[,] Matriz)
         {
             int Filas, Columnas;
             string Resultado;
 
             Resultado = "Los valores de la matriz son:\n";
-        
+
             for (Filas = 0; Filas < Matriz.GetLength(0); Filas++)
             {
                 for (Columnas = 0; Columnas < Matriz.GetLength(1); Columnas++)
@@ -141,7 +138,7 @@ namespace Proyecto_Entornos.MatrizRotar
 
                 Resultado = Resultado + "\n";
 
-            } 
+            }
 
             return Resultado;
         }

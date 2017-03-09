@@ -13,15 +13,16 @@ using System.Windows.Forms;
 /// </summary>
 namespace Proyecto_Entornos
 {
-    public partial class Formprin : Form
+    public partial class FormPrin : Form
     {
         /// <summary>
         /// Constructor de la clase Formprin que inicializa los componentes
         /// </summary>
-        public Formprin()
+        public FormPrin()
         {
             InitializeComponent();
         }
+
 
         /// <summary>
         /// En este evento al hacer click llama a la aplicacion 1
@@ -30,10 +31,12 @@ namespace Proyecto_Entornos
         /// <param name="e">Sin uso</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            Proyecto_Entornos.Factorial.FormApp1 oApp1 = new Proyecto_Entornos.Factorial.FormApp1();
+            MessageBox.Show("Esta aplicacion te calcula el factorial del numero introducido");
 
+            Proyecto_Entornos.Factorial.FormApp1 oApp1 = new Proyecto_Entornos.Factorial.FormApp1();
             oApp1.ShowDialog();
         }
+
 
         /// <summary>
         /// En este evento al hacer click llama a la aplicacion 2
@@ -42,6 +45,8 @@ namespace Proyecto_Entornos
         /// <param name="e">Sin uso</param>
         private void button2_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Esta aplicacion te calcula los multiplos de 3 hasta el numero introducido");
+
             Proyecto_Entornos.Multiplos3.FormApp2 oApp2 = new Proyecto_Entornos.Multiplos3.FormApp2();
             oApp2.ShowDialog();
         }
@@ -53,6 +58,8 @@ namespace Proyecto_Entornos
         /// <param name="e">Sin uso</param>
         private void button3_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Esta aplicacion obtiene posiciones en una matriz y rota las posiciones");
+
             Proyecto_Entornos.MatrizRotar.FormApp3 oApp3 = new Proyecto_Entornos.MatrizRotar.FormApp3();
             oApp3.ShowDialog();
         }
@@ -64,6 +71,8 @@ namespace Proyecto_Entornos
         /// <param name="e">Sin uso</param>
         private void button4_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Esta aplicacion obtiene automaticamente numeros y los posiciona en una matriz en zigzag");
+
             Proyecto_Entornos.ZigZag.FormApp4 oApp4 = new Proyecto_Entornos.ZigZag.FormApp4();
             oApp4.ShowDialog();
         }

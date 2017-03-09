@@ -16,7 +16,7 @@ namespace Proyecto_Entornos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formprin());
+            Application.Run(new FormPrin());
         }
     }
 }

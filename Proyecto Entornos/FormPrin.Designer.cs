@@ -1,16 +1,16 @@
 ﻿namespace Proyecto_Entornos
 {
-    partial class Formprin
+    partial class FormPrin
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -36,9 +36,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(51, 45);
+            this.button1.Location = new System.Drawing.Point(53, 38);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 39);
+            this.button1.Size = new System.Drawing.Size(101, 48);
             this.button1.TabIndex = 0;
             this.button1.Text = "Aplicacion 1";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,9 +46,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(291, 45);
+            this.button2.Location = new System.Drawing.Point(352, 43);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 39);
+            this.button2.Size = new System.Drawing.Size(100, 43);
             this.button2.TabIndex = 1;
             this.button2.Text = "Aplicacion 2";
             this.button2.UseVisualStyleBackColor = true;
@@ -56,9 +56,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(51, 169);
+            this.button3.Location = new System.Drawing.Point(53, 154);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 39);
+            this.button3.Size = new System.Drawing.Size(101, 44);
             this.button3.TabIndex = 2;
             this.button3.Text = "Aplicacion 3";
             this.button3.UseVisualStyleBackColor = true;
@@ -66,25 +66,25 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(302, 169);
+            this.button4.Location = new System.Drawing.Point(352, 154);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 39);
+            this.button4.Size = new System.Drawing.Size(100, 44);
             this.button4.TabIndex = 3;
             this.button4.Text = "Aplicacion 4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Formprin
+            // FormPrin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 277);
+            this.ClientSize = new System.Drawing.Size(543, 267);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Formprin";
-            this.Text = "Form1";
+            this.Name = "FormPrin";
+            this.Text = "Formularioprin";
             this.ResumeLayout(false);
 
         }
@@ -97,4 +97,3 @@
         private System.Windows.Forms.Button button4;
     }
 }
-

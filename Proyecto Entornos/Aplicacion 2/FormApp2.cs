@@ -12,6 +12,7 @@ using System.Windows.Forms;
 /// Namespace de la Aplicacion 2
 /// </summary>
 namespace Proyecto_Entornos.Multiplos3
+
 {
     public partial class FormApp2 : Form
     {
@@ -24,26 +25,33 @@ namespace Proyecto_Entornos.Multiplos3
             InitializeComponent();
         }
 
+
         /// <summary>
-        /// En este metodo se calcula los multiplos de 3 del 1 al 100
+        /// En este metodo se calcula los multiplos de 3 del 1 al valor introducido
         /// </summary>
-        /// <remarks>Nada que comentar</remarks>
+        /// <remarks>Si el numero es un caracter especial o demasiado grande saltara una excepcion</remarks>
         /// <returns>Devuelve un texto con todos los multiplos</returns>
-        string CalcularMultiplos()
+        public string CalcularMultiplos(int Valor)
         {
             int Numeros;
             string Texto;
 
             Texto = "Los múltiplos de 3 son: ";
-
-            for (Numeros = 1; Numeros <= 100; Numeros++)
+            if (Valor > 0)
             {
-
-                if (Numeros % 3 == 0)
+                for (Numeros = 1; Numeros <= Valor; Numeros++)
                 {
-                    Texto = Texto + Numeros + ", ";
-                }
 
+                    if (Numeros % 3 == 0)
+                    {
+                        Texto = Texto + Numeros + ", ";
+                    }
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error!!");             
             }
 
             return Texto;
@@ -54,14 +62,26 @@ namespace Proyecto_Entornos.Multiplos3
         /// </summary>
         /// <param name="sender">Lanza el evento del boton 1</param>
         /// <param name="e">Sin uso</param>
-        private void BBoton1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             string Resultado;
-            Resultado = CalcularMultiplos();
+            int Valor;
+            bool NumeroValido = true;
+
+            do
+            {
+                NumeroValido = int.TryParse(textBox1.Text, out Valor);
+
+                if (!NumeroValido)
+                {
+                    MessageBox.Show("Valor no valido!!!");
+                }
+
+            } while (!NumeroValido);
+
+            Resultado = CalcularMultiplos(Valor);
+
             MessageBox.Show(Resultado);
-                      
-
-
         }
     }
 }
