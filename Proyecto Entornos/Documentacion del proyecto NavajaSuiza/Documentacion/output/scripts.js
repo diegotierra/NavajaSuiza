@@ -864,11 +864,6 @@ function GetQuote()
     return unescape("%22");
 }
 
-function IndexEscapeHTML(txt)
-{ 
-    return txt.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/'/g, "&#039;");
-}
-
 function IndexPrintEntry(text, url, divclass)
 {
     var result = "";
@@ -884,7 +879,7 @@ function IndexPrintEntry(text, url, divclass)
         }
     }
 
-    result = result + IndexEscapeHTML(text);
+    result = result + text;
 
     if (url.length > 0) {
         result = result + "</a>";

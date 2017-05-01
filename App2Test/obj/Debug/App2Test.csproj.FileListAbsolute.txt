@@ -1,0 +1,10 @@
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\bin\Debug\App2Test.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\bin\Debug\App2Test.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\bin\Debug\Proyecto Entornos.exe
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\bin\Debug\Proyecto Entornos.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\bin\Debug\Proyecto Entornos.xml
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\obj\Debug\App2Test.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\obj\Debug\App2Test.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\App2Test\obj\Debug\App2Test.csprojResolveAssemblyReference.cache

@@ -28,61 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.bAplicacion1 = new System.Windows.Forms.Button();
+            this.bAplicacion2 = new System.Windows.Forms.Button();
+            this.bAplicacion3 = new System.Windows.Forms.Button();
+            this.bAplicacion4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // bAplicacion1
             // 
-            this.button1.Location = new System.Drawing.Point(53, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Aplicacion 1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bAplicacion1.Location = new System.Drawing.Point(53, 38);
+            this.bAplicacion1.Name = "bAplicacion1";
+            this.bAplicacion1.Size = new System.Drawing.Size(101, 48);
+            this.bAplicacion1.TabIndex = 0;
+            this.bAplicacion1.Text = "Aplicacion 1";
+            this.bAplicacion1.UseVisualStyleBackColor = true;
+            this.bAplicacion1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // bAplicacion2
             // 
-            this.button2.Location = new System.Drawing.Point(352, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 43);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Aplicacion 2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.bAplicacion2.Location = new System.Drawing.Point(352, 43);
+            this.bAplicacion2.Name = "bAplicacion2";
+            this.bAplicacion2.Size = new System.Drawing.Size(100, 43);
+            this.bAplicacion2.TabIndex = 1;
+            this.bAplicacion2.Text = "Aplicacion 2";
+            this.bAplicacion2.UseVisualStyleBackColor = true;
+            this.bAplicacion2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // bAplicacion3
             // 
-            this.button3.Location = new System.Drawing.Point(53, 154);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 44);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Aplicacion 3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.bAplicacion3.Location = new System.Drawing.Point(53, 154);
+            this.bAplicacion3.Name = "bAplicacion3";
+            this.bAplicacion3.Size = new System.Drawing.Size(101, 44);
+            this.bAplicacion3.TabIndex = 2;
+            this.bAplicacion3.Text = "Aplicacion 3";
+            this.bAplicacion3.UseVisualStyleBackColor = true;
+            this.bAplicacion3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // bAplicacion4
             // 
-            this.button4.Location = new System.Drawing.Point(352, 154);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 44);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Aplicacion 4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.bAplicacion4.Location = new System.Drawing.Point(352, 154);
+            this.bAplicacion4.Name = "bAplicacion4";
+            this.bAplicacion4.Size = new System.Drawing.Size(100, 44);
+            this.bAplicacion4.TabIndex = 3;
+            this.bAplicacion4.Text = "Aplicacion 4";
+            this.bAplicacion4.UseVisualStyleBackColor = true;
+            this.bAplicacion4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FormPrin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 267);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bAplicacion4);
+            this.Controls.Add(this.bAplicacion3);
+            this.Controls.Add(this.bAplicacion2);
+            this.Controls.Add(this.bAplicacion1);
             this.Name = "FormPrin";
             this.Text = "Formularioprin";
             this.ResumeLayout(false);
@@ -91,9 +91,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button bAplicacion1;
+        private System.Windows.Forms.Button bAplicacion2;
+        private System.Windows.Forms.Button bAplicacion3;
+        private System.Windows.Forms.Button bAplicacion4;
     }
 }

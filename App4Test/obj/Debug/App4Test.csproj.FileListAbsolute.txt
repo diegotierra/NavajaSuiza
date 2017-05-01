@@ -1,0 +1,9 @@
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\bin\Debug\App4Test.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\bin\Debug\App4Test.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\bin\Debug\Proyecto Entornos.exe
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\bin\Debug\Proyecto Entornos.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\bin\Debug\Proyecto Entornos.xml
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\obj\Debug\App4Test.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App4Test\obj\Debug\App4Test.pdb

@@ -9,14 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /// <summary>
-/// Namespace de la aplicacion 4
+/// Namespace de la Aplicacion 4
 /// </summary>
-namespace Proyecto_Entornos.ZigZag
+namespace Proyecto_Entornos.SumarPares
 {
+    /// <summary>
+    /// Clase de la aplicacion 4
+    /// </summary>
     public partial class FormApp4 : Form
     {
-
-        /// <summary>
+        /// <summary> 
         /// Constructor de la clase formapp4 que inicializa los componentes
         /// </summary>
         /// <remarks>Nada que comentar</remarks>
@@ -25,91 +27,29 @@ namespace Proyecto_Entornos.ZigZag
             InitializeComponent();
         }
 
-
         /// <summary>
-        /// He creado  2 constantes que definen las filas y columnas y una matriz
+        /// Evento que obtiene un valor ,lanza el metodo SumarPares y muestra el resultado
         /// </summary>
-        const int NumeroFilas = 4;
-        const int NumeroColumnas = 5;
-
-        int[,] ZigZag = new int[NumeroFilas, NumeroColumnas];
-
-        /// <summary>
-        /// Rellena la matriz en forma de zigzag con datos internos 
-        /// </summary>
-        /// <remarks>Nada que comentar</remarks>
-        /// <param name="ZigZag">Matriz que le pasamos</param>
-        public void RellenarMatriz (int [,] ZigZag)
-        {
-            int Numero = 1;
-
-            for (int Columnas = 0; Columnas < ZigZag.GetLength(1); Columnas++)
-            {
-                if (Columnas % 2 == 0)
-                {
-                    for (int Filas = 0; Filas < ZigZag.GetLength(0); Filas++)
-                    {
-
-                        ZigZag[Filas,Columnas] = Numero;
-                        Numero++;
-
-                    }
-                }
-                else
-                {
-                    for (int Filas = ZigZag.GetLength(0) - 1; Filas >= 0; Filas--)
-                    {
-
-                        ZigZag[Filas,Columnas] = Numero;
-                        Numero++;
-
-                    }
-                }               
-            }
-        }
-
-        /// <summary>
-        /// Muestra los datos de la matriz
-        /// </summary>
-        /// <param name="ZigZag">Matriz que le pasamos</param>
-        /// <remarks>Nada que comentar</remarks>
-        /// <returns>Devuelve un texto con el contenido de la matriz</returns>
-        public string MostrarMatriz(int[,] ZigZag)
-        {
-            int Filas, Columnas; string Resultado;
-
-            Resultado = "Los valores de la matriz son:\n";
-
-            for (Filas = 0; Filas < ZigZag.GetLength(0); Filas++)
-            {
-                for (Columnas = 0; Columnas < ZigZag.GetLength(1); Columnas++)
-                {
-
-                    Resultado = Resultado + ZigZag[Filas, Columnas] + ", ";
-
-                }
-
-                    Resultado = Resultado + "\n";
-
-             } 
-
-            return Resultado;
-        }
-
-        /// <summary>
-        /// Evento que rellena la matriz y muestra el contenido
-        /// </summary>
-        /// <param name="sender">Lanza el evento del boton 2</param>
+        /// <param name="sender">Lanza el evento del boton </param>
         /// <param name="e">Sin uso</param>
-        public void button2_Click(object sender, EventArgs e)
+        public void BBoton1_Click(object sender, EventArgs e)
         {
-            string Resultado;
+            int Numero = 0;
+            bool NumeroValido = true;
 
-            RellenarMatriz(ZigZag);
-            Resultado = MostrarMatriz(ZigZag);
 
-            MessageBox.Show(Resultado);
+            do
+            {
+                NumeroValido = int.TryParse(textBox1.Text, out Numero);
 
+                if (!NumeroValido || Numero < 0)
+                {
+                    MessageBox.Show("El valor debe ser positivo");
+                }
+
+            } while (!NumeroValido || Numero < 0);
+
+            MessageBox.Show(tApp4Logica.SumarPares(Numero).ToString());            
         }
     }
 }

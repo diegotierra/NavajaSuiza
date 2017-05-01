@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Proyecto Entornos</name>
+    </assembly>
+    <members>
+        <member name="T:Proyecto_Entornos.Factorial.FormApp1">
+            <summary>
+            Clase de la aplicacion 1
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Factorial.FormApp1.#ctor">
+            <summary> 
+            Constructor de la clase formapp1 que inicializa los componentes
+            </summary>
+            <remarks>Nada que comentar</remarks>
+        </member>
+        <member name="M:Proyecto_Entornos.Factorial.FormApp1.BBoton1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que obtiene un valor ,llama al metodo factorial y muestra el resultado
+            </summary>
+            <param name="sender">Lanza el evento del boton</param>
+            <param name="e">Sin uso</param>
+        </member>
+        <member name="F:Proyecto_Entornos.Factorial.FormApp1.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Factorial.FormApp1.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:Proyecto_Entornos.Factorial.FormApp1.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:Proyecto_Entornos.Factorial.tApp1Logica">
+            <summary>
+            Clase de la logica de negocio de la Aplicacion 1
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Factorial.tApp1Logica.CalcularFactorial(System.Int32)">
+            <summary>
+            En esta funcion calcula el factorial de un numero que le pasamos por parametros
+            </summary>
+            <remarks>Nada que comentar</remarks>
+            <param name="Numero">Es el valor que el usuario introduce</param>
+            <returns>Devuelve el factorial</returns>
+        </member>
+        <member name="T:Proyecto_Entornos.Multiplos3.FormApp2">
+            <summary>
+            Clase de la aplicacion 2
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Multiplos3.FormApp2.#ctor">
+            <summary>
+            Constructor de la clase formapp2 que inicializa los componentes
+            </summary>
+            <remarks>Nada que comentar</remarks>
+        </member>
+        <member name="M:Proyecto_Entornos.Multiplos3.FormApp2.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que llama a un metodo y muestra el resultado
+            </summary>
+            <param name="sender">Lanza el evento del boton 1</param>
+            <param name="e">Sin uso</param>
+        </member>
+        <member name="F:Proyecto_Entornos.Multiplos3.FormApp2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Multiplos3.FormApp2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proyecto_Entornos.Multiplos3.FormApp2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proyecto_Entornos.Multiplos3.tApp2Logica">
+            <summary>
+            Clase de la logica de negocio de la Aplicacion 2
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Multiplos3.tApp2Logica.CalcularMultiplos(System.Int32)">
+            <summary>
+            En este metodo se calcula los multiplos de 3 del 1 al valor introducido
+            </summary>
+            <remarks>Nada que comentar</remarks>
+            <returns>Devuelve un texto con todos los multiplos</returns>
+        </member>
+        <member name="T:Proyecto_Entornos.Notas.FormApp3">
+            <summary>
+            Clase de la aplicacion 3
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Notas.FormApp3.#ctor">
+            <summary> 
+            Constructor de la clase formapp3 que inicializa los componentes
+            </summary>
+            <remarks>Nada que comentar</remarks>
+        </member>
+        <member name="M:Proyecto_Entornos.Notas.FormApp3.BBoton1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que obtiene un valor , lanza el metodo CalificarNota y muestra el resultado
+            </summary>
+            <param name="sender">Lanza el evento del boton 1</param>
+            <param name="e">Sin uso</param>
+        </member>
+        <member name="F:Proyecto_Entornos.Notas.FormApp3.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Notas.FormApp3.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:Proyecto_Entornos.Notas.FormApp3.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:Proyecto_Entornos.Notas.tApp3Logica">
+            <summary>
+            Clase de la logica de negocio de la Aplicacion 3
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Notas.tApp3Logica.CalificarNota(System.Double)">
+            <summary>
+            En esta funcion se califica la nota que le pasamos por parametros
+            </summary>
+            <remarks>Nada que comentar</remarks>
+            <param name="Nota">Es el valor que el usuario introduce</param>
+            <returns>Devuelve la calificacion correspondiente a la nota</returns>
+        </member>
+        <member name="T:Proyecto_Entornos.SumarPares.FormApp4">
+            <summary>
+            Clase de la aplicacion 4
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.SumarPares.FormApp4.#ctor">
+            <summary> 
+            Constructor de la clase formapp4 que inicializa los componentes
+            </summary>
+            <remarks>Nada que comentar</remarks>
+        </member>
+        <member name="M:Proyecto_Entornos.SumarPares.FormApp4.BBoton1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que obtiene un valor ,lanza el metodo SumarPares y muestra el resultado
+            </summary>
+            <param name="sender">Lanza el evento del boton </param>
+            <param name="e">Sin uso</param>
+        </member>
+        <member name="F:Proyecto_Entornos.SumarPares.FormApp4.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.SumarPares.FormApp4.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:Proyecto_Entornos.SumarPares.FormApp4.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:Proyecto_Entornos.SumarPares.tApp4Logica">
+            <summary>
+            Clase de la logica de negocio de la aplicacion 4
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.SumarPares.tApp4Logica.SumarPares(System.Int32)">
+            <summary>
+            En esta funcion suma los pares del 1 al numero introducido por parametros
+            </summary>
+            <remarks>Nada que comentar</remarks>
+            <param name="Numero">Es el valor que el usuario introduce</param>
+            <returns>Devuelve la suma de los pares</returns>
+        </member>
+        <member name="T:Proyecto_Entornos.FormPrin">
+            <summary>
+            Clase del formulario principal
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.FormPrin.#ctor">
+            <summary>
+            Constructor de la clase Formprin que inicializa los componentes
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.FormPrin.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            En este evento al hacer click llama a la aplicacion 1
+            </summary>
+            <param name="sender">Lanza el evento del boton 1</param>
+            <param name="e">Sin uso</param>
+        </member>
+        <member name="M:Proyecto_Entornos.FormPrin.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            En este evento al hacer click llama a la aplicacion 2
+            </summary>
+            <param name="sender">Lanza el evento del boton 2</param>
+            <param name="e">Sin uso</param>
+        </member>
+        <member name="M:Proyecto_Entornos.FormPrin.button3_Click(System.Object,System.EventArgs)">
+            <summary>
+            En este evento al hacer click llama a la aplicacion 3
+            </summary>
+            <param name="sender">Lanza el evento del boton 3</param>
+            <param name="e">Sin uso</param>
+        </member>
+        <member name="M:Proyecto_Entornos.FormPrin.button4_Click(System.Object,System.EventArgs)">
+            <summary>
+            En este evento al hacer click llama a la aplicacion 4
+            </summary>
+            <param name="sender">Lanza el evento del boton 4</param>
+            <param name="e">Sin uso</param>
+        </member>
+        <member name="F:Proyecto_Entornos.FormPrin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.FormPrin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proyecto_Entornos.FormPrin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proyecto_Entornos.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="T:Proyecto_Entornos.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:Proyecto_Entornos.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:Proyecto_Entornos.Properties.Resources.Culture">
+            <summary>
+              Invalida la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos usando esta clase de recursos fuertemente tipados.
+            </summary>
+        </member>
+    </members>
+</doc>

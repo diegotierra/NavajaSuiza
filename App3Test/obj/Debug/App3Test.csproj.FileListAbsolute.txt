@@ -1,0 +1,10 @@
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\bin\Debug\App3Test.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\bin\Debug\App3Test.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\bin\Debug\Proyecto Entornos.exe
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\bin\Debug\Proyecto Entornos.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\bin\Debug\Proyecto Entornos.xml
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\obj\Debug\App3Test.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\obj\Debug\App3Test.dll
+C:\Users\Diego\Desktop\NavajaSuiza\App3Test\obj\Debug\App3Test.pdb

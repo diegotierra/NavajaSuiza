@@ -1,4 +1,4 @@
-﻿; This is a Doc-O-Matic version 10.0.2.2100 project file.
+﻿; This is a Doc-O-Matic version 10.0.1.2079 project file.
 ; This file is maintained by Doc-O-Matic, do not edit manually.
 
 [*Control*]
@@ -406,7 +406,7 @@ CValue_4=10526880
 CValue_5=13421772
 CValue_6=65280
 CValue_7=255
-CValue_8=32768
+CValue_8=65280
 CValue_9=16711680
 
 [Configurations]
@@ -513,7 +513,6 @@ ExportUndocumentedSymbols=1
 ExportUnfinishedTopics=1
 Files=1
 Functions=1
-ImplementationDetails=1
 Macros=1
 Member-0-0=1
 Member-0-1=0
@@ -1643,7 +1642,6 @@ Underline=0
 [Configurations\Configuration 1\TopicTitles]
 AlwaysUseDotAsQualifier=0
 Saved=1
-UseFullName=1
 Value0.0=%NSSYM% %TYPE%
 Value0.1=%SYM% %TYPE%
 Value0.10=%NAME%
@@ -16656,7 +16654,6 @@ ExportUndocumentedSymbols=1
 ExportUnfinishedTopics=1
 Files=1
 Functions=1
-ImplementationDetails=1
 Macros=1
 Member-0-0=1
 Member-0-1=0
@@ -17786,7 +17783,6 @@ Underline=0
 [Configurations\Configuration 2\TopicTitles]
 AlwaysUseDotAsQualifier=0
 Saved=1
-UseFullName=1
 Value0.0=%NSSYM% %TYPE%
 Value0.1=%SYM% %TYPE%
 Value0.10=%NAME%
@@ -32799,7 +32795,6 @@ ExportUndocumentedSymbols=1
 ExportUnfinishedTopics=1
 Files=1
 Functions=1
-ImplementationDetails=1
 Macros=1
 Member-0-0=1
 Member-0-1=0
@@ -33929,7 +33924,6 @@ Underline=0
 [Configurations\Configuration 3\TopicTitles]
 AlwaysUseDotAsQualifier=0
 Saved=1
-UseFullName=1
 Value0.0=%NSSYM% %TYPE%
 Value0.1=%SYM% %TYPE%
 Value0.10=%NAME%
@@ -48942,7 +48936,6 @@ ExportUndocumentedSymbols=1
 ExportUnfinishedTopics=1
 Files=1
 Functions=1
-ImplementationDetails=1
 Macros=1
 Member-0-0=1
 Member-0-1=0
@@ -50072,7 +50065,6 @@ Underline=0
 [Configurations\Configuration 4\TopicTitles]
 AlwaysUseDotAsQualifier=0
 Saved=1
-UseFullName=1
 Value0.0=%NSSYM% %TYPE%
 Value0.1=%SYM% %TYPE%
 Value0.10=%NAME%
@@ -65085,7 +65077,6 @@ ExportUndocumentedSymbols=1
 ExportUnfinishedTopics=1
 Files=1
 Functions=1
-ImplementationDetails=1
 Macros=1
 Member-0-0=1
 Member-0-1=0
@@ -66215,7 +66206,6 @@ Underline=0
 [Configurations\Configuration 5\TopicTitles]
 AlwaysUseDotAsQualifier=0
 Saved=1
-UseFullName=1
 Value0.0=%NSSYM% %TYPE%
 Value0.1=%SYM% %TYPE%
 Value0.10=%NAME%
@@ -75938,7 +75928,6 @@ ExportUndocumentedSymbols=1
 ExportUnfinishedTopics=1
 Files=1
 Functions=1
-ImplementationDetails=1
 Macros=1
 Member-0-0=1
 Member-0-1=0
@@ -77067,7 +77056,6 @@ Underline=0
 [Configurations\Configuration 6\TopicTitles]
 AlwaysUseDotAsQualifier=0
 Saved=1
-UseFullName=1
 Value0.0=%NSSYM% %TYPE%
 Value0.1=%SYM% %TYPE%
 Value0.10=%NAME%
@@ -86874,7 +86862,6 @@ ExportUndocumentedSymbols=1
 ExportUnfinishedTopics=1
 Files=1
 Functions=1
-ImplementationDetails=1
 Macros=1
 Member-0-0=1
 Member-0-1=0
@@ -88003,7 +87990,6 @@ Underline=0
 [Configurations\Configuration 7\TopicTitles]
 AlwaysUseDotAsQualifier=0
 Saved=1
-UseFullName=1
 Value0.0=%NSSYM% %TYPE%
 Value0.1=%SYM% %TYPE%
 Value0.10=%NAME%
@@ -88853,13 +88839,17 @@ ID9=9
 SavedValues=1
 
 [Source Files]
-Count=6
+Count=10
 File0=template.dtx
-File1=E:\NavajaSuiza\Proyecto Entornos\Aplicacion 1\FormApp1.cs
-File2=E:\NavajaSuiza\Proyecto Entornos\Aplicacion 2\FormApp2.cs
-File3=E:\NavajaSuiza\Proyecto Entornos\Aplicacion 3\FormApp3.cs
-File4=E:\NavajaSuiza\Proyecto Entornos\Aplicacion 4\FormApp4.cs
-File5=E:\NavajaSuiza\Proyecto Entornos\Formprin.cs
+File1=..\NavajaSuiza\Proyecto Entornos\Aplicacion 1\FormApp1.cs
+File2=..\NavajaSuiza\Proyecto Entornos\Aplicacion 1\tApp1Logica.cs
+File3=..\NavajaSuiza\Proyecto Entornos\Aplicacion 2\FormApp2.cs
+File4=..\NavajaSuiza\Proyecto Entornos\Aplicacion 2\tApp2Logica.cs
+File5=..\NavajaSuiza\Proyecto Entornos\Aplicacion 3\FormApp3.cs
+File6=..\NavajaSuiza\Proyecto Entornos\Aplicacion 3\tApp3Logica.cs
+File7=..\NavajaSuiza\Proyecto Entornos\Aplicacion 4\FormApp4.cs
+File8=..\NavajaSuiza\Proyecto Entornos\Aplicacion 4\tApp4Logica.cs
+File9=..\NavajaSuiza\Proyecto Entornos\FormPrin.cs
 
 [Source Include Directories]
 Count=0

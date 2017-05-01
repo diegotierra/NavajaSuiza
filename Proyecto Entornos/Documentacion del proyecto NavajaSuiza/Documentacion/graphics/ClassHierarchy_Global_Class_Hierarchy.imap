@@ -1,6 +1,10 @@
-20,94,68,116::
-128,20,385,42:L:Proyecto_Entornos.Formprin
-128,57,385,79:L:Proyecto_Entornos.Factorial.FormApp1
-128,94,385,116:L:Proyecto_Entornos.MatrizRotar.FormApp3
-128,131,385,153:L:Proyecto_Entornos.Multiplos3.FormApp2
-128,168,385,190:L:Proyecto_Entornos.ZigZag.FormApp4
+351,168,612,190:L:Proyecto_Entornos.SumarPares.FormApp4
+351,131,612,153:L:Proyecto_Entornos.Notas.FormApp3
+351,94,612,116:L:Proyecto_Entornos.Multiplos3.FormApp2
+351,57,612,79:L:Proyecto_Entornos.Factorial.FormApp1
+351,20,612,42:L:Proyecto_Entornos.FormPrin
+20,94,291,116::
+20,156,291,178:L:Proyecto_Entornos.Factorial.tApp1Logica
+20,218,291,240:L:Proyecto_Entornos.Multiplos3.tApp2Logica
+20,280,291,302:L:Proyecto_Entornos.Notas.tApp3Logica
+20,342,291,364:L:Proyecto_Entornos.SumarPares.tApp4Logica

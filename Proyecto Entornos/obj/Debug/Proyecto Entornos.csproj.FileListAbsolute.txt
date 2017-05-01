@@ -1,0 +1,58 @@
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.exe.config
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_1.Form1.resources
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_2.Form1.resources
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_3.Form1.resources
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_4.Form1.resources
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Formprin.resources
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Properties.Resources.resources
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.exe
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.pdb
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.exe
+C:\Users\user\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.pdb
+L:\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.exe.config
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.exe
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.pdb
+L:\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.exe
+L:\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.pdb
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.csprojResolveAssemblyReference.cache
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_1.Form1.resources
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_2.Form1.resources
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_3.Form1.resources
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_4.Form1.resources
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Formprin.resources
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Properties.Resources.resources
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.csproj.GenerateResource.Cache
+L:\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.XML
+E:\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.exe.config
+E:\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.XML
+E:\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.exe
+E:\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.pdb
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_1.Form1.resources
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Multiplos3.FormApp2.resources
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_2.Form1.resources
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_3.Form1.resources
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_4.Form1.resources
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Formprin.resources
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Properties.Resources.resources
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.csproj.GenerateResource.Cache
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.exe
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.pdb
+E:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.csprojResolveAssemblyReference.cache
+L:\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Multiplos3.FormApp2.resources
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.exe.config
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.XML
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.exe
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Multiplos3.FormApp2.resources
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Aplicacion_2.Form1.resources
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Formprin.resources
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Properties.Resources.resources
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto Entornos.csproj.GenerateResource.Cache
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.exe
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\bin\Debug\Proyecto Entornos.pdb
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Factorial.FormApp1.resources
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.Notas.FormApp3.resources
+C:\Users\Diego\Desktop\NavajaSuiza\Proyecto Entornos\obj\Debug\Proyecto_Entornos.SumarPares.FormApp4.resources

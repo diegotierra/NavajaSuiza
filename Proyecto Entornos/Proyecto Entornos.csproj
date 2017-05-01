@@ -50,26 +50,31 @@
     <Compile Include="Aplicacion 1\FormApp1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aplicacion 1\Form1.designer.cs" />
+    <Compile Include="Aplicacion 1\FormApp1.designer.cs">
+      <DependentUpon>FormApp1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aplicacion 1\tApp1Logica.cs" />
     <Compile Include="Aplicacion 2\FormApp2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Aplicacion 2\FormApp2.Designer.cs">
       <DependentUpon>FormApp2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplicacion 2\tApp2Logica.cs" />
     <Compile Include="Aplicacion 3\FormApp3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Aplicacion 3\FormApp3.designer.cs">
       <DependentUpon>FormApp3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Aplicacion 3\InputBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Aplicacion 3\tApp3Logica.cs" />
     <Compile Include="Aplicacion 4\FormApp4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Aplicacion 4\Form1.designer.cs" />
+    <Compile Include="Aplicacion 4\FormApp4.designer.cs">
+      <DependentUpon>FormApp4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aplicacion 4\tApp4Logica.cs" />
     <Compile Include="FormPrin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,7 +83,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Aplicacion 1\Form1.resx" />
+    <EmbeddedResource Include="Aplicacion 1\FormApp1.resx">
+      <DependentUpon>FormApp1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Aplicacion 2\FormApp2.resx">
       <DependentUpon>FormApp2.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,7 +93,9 @@
     <EmbeddedResource Include="Aplicacion 3\FormApp3.resx">
       <DependentUpon>FormApp3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Aplicacion 4\Form1.resx" />
+    <EmbeddedResource Include="Aplicacion 4\FormApp4.resx">
+      <DependentUpon>FormApp4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrin.resx">
       <DependentUpon>FormPrin.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Documentacion del proyecto NavajaSuiza\Casos Pruebas Unitarias.pdf" />
+    <None Include="Documentacion del proyecto NavajaSuiza\Documento Politica Estilos.pdf" />
+    <None Include="Documentacion del proyecto NavajaSuiza\Pruebas de caja negra.pdf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,9 +124,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Documentacion del proyecto NavajaSuiza\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
